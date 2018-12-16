@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-shiny",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shiny eslint plugin.",
   "keywords": [
     "eslint",
@@ -15,7 +15,8 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "~3.9.1",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "growl": ">=1.10.0"
   },
   "engines": {
     "node": ">=0.10.0"
