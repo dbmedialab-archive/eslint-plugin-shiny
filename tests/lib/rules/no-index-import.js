@@ -22,15 +22,17 @@ ruleTester.run("no-index-import", rule, {
 
     valid: [
 
-        // give me some code that won't trigger a warning
+        {
+            code: "import { Heading } from '@aller/shiny/lib/atoms/Heading';"
+        }
     ],
 
     invalid: [
         {
             code: "import { Heading } from '@aller/shiny';",
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "Index imports from shiny are not allowed.",
+                type: "CRITICAL"
             }]
         }
     ]
