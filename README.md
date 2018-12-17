@@ -46,7 +46,7 @@ Then configure the rules you want to use under the rules section.
 
 * `no-index-import` Restricts user from writing
 ```javascript
-import { Heading } from '@allershiny';
+import { Heading } from '@aller/shiny';
 ```
 
 
