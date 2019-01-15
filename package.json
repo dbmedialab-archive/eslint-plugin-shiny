@@ -12,6 +12,11 @@
   "scripts": {
     "test": "mocha tests --recursive"
   },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbmedialab/eslint-plugin-shiny.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "~3.9.1",
