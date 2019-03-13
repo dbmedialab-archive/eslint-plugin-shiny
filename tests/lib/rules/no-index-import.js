@@ -24,12 +24,22 @@ ruleTester.run("no-index-import", rule, {
 
         {
             code: "import { Heading } from '@aller/shiny/lib/atoms/Heading';"
+        },
+        {
+            code: "import { FrontSmallHeading } from '@aller/shiny/lib/atoms/FrontHeading'"
         }
     ],
 
     invalid: [
         {
             code: "import { Heading } from '@aller/shiny';",
+            errors: [{
+                message: "Index imports from shiny are not allowed.",
+                type: "CRITICAL"
+            }]
+        },
+        {
+            code: "import { FrontSmallHeading } from '@aller/shiny/lib'",
             errors: [{
                 message: "Index imports from shiny are not allowed.",
                 type: "CRITICAL"
